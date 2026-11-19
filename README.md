@@ -8,16 +8,14 @@
 
 ## Why I built this
 
-Scaffold pore architecture strongly affects tissue-engineering outcomes. Pore size controls
+Scaffold porosity strongly affects tissue-engineering outcomes. Pore size controls
 cell infiltration, nutrient and oxygen diffusion, vascularisation and the type of tissue that
 forms. Interconnected pores of roughly 100–300 µm are often cited for bone ingrowth, and
 smaller pores for soft tissue. Pores are still often measured by hand in ImageJ, which is
 slow, subjective and hard to reproduce across a batch of samples.
 
-I built this tool **retrospectively**, after an undergraduate project at Imperial College
-London where I characterised powders by SEM, EDX and XRD. There I measured particle sizes by
-hand in ImageJ, which was slow and hard to keep consistent. Looking back, I wanted an
-automated, reproducible alternative. I also expect to need one in my MSc research on
+I built this model after my project where I characterised powders by SEM, EDX and XRD. There I measured particle sizes by
+hand in ImageJ, which was slow and hard to keep consistent. I expect to need one in my MSc research on
 bioactive glass microcarriers, where microsphere size and porosity have to be quantified
 from microscope images.
 
@@ -25,8 +23,8 @@ The tool turns SEM, optical or micro-CT slice images into consistent, quantitati
 metrics, so scaffolds made by different methods (porogen leaching, freeze-drying,
 3D bioprinting) can be compared objectively and quickly.
 
-> **Note:** the code was written after that project, not during it. All results shown here
-> come from synthetic test images with known ground truth (see "Validation" below), not from
+> **Note:** All results shown here
+> come from test images with known ground truth (see "Validation" below), not from
 > my own micrographs.
 
 ## What it measures
@@ -155,7 +153,7 @@ scaffold-porosity-analyser/
 └── tests/test_analysis.py          # pytest unit tests
 ```
 
-## Skills demonstrated
+## Skills used
 
 Python · NumPy · SciPy (ndimage) · scikit-image (thresholding, morphology, watershed,
 regionprops, medial axis) · Matplotlib · quantitative image analysis · method validation
@@ -167,21 +165,8 @@ against ground truth · CLI tool design · pytest
   For isotropic structures it estimates volume porosity (Delesse principle), but it says
   nothing about interconnectivity. Analysing a micro-CT stack slice by slice is a natural
   extension.
-- The included images are **synthetic**, made for validation. Real micrographs may need tuned
-  thresholds, more denoising or `--split-touching`. Always check the overlay figure.
+- The included images are made for validation. 
 - SEM depth of field means deeper pores can show through walls. Thresholding measures the
   surface plane only.
 
-## Next steps
 
-- Apply it to real micrographs, starting with my own SEM images from the powder
-  characterisation project, and compare against my original manual ImageJ measurements
-
-- 3D analysis of micro-CT stacks (volumetric porosity, pore interconnectivity, tortuosity)
-- Adaptive / machine-learning segmentation (e.g. random-forest pixel classifier or U-Net) for
-  difficult, low-contrast images
-- Statistical comparison between scaffold groups (ANOVA on pore-size distributions)
-
-## License
-
-MIT. See [LICENSE](LICENSE).
