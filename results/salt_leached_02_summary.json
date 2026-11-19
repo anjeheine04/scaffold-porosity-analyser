@@ -1,0 +1,31 @@
+{
+  "image": "salt_leached_02.png",
+  "void_fraction": 0.3870188395182292,
+  "threshold_value": 0.462890625,
+  "n_pores": 423,
+  "n_pores_measured": 367,
+  "mean_equiv_diameter_um": 35.35849979593276,
+  "median_equiv_diameter_um": 30.886481329099638,
+  "std_equiv_diameter_um": 17.059459402877525,
+  "d10_um": 19.07428111117357,
+  "d90_um": 57.223451760275736,
+  "mean_pore_area_um2": 1210.4938692098092,
+  "mean_circularity": 0.8313758896062261,
+  "mean_aspect_ratio": 1.2810695209812277,
+  "mean_wall_thickness_um": 25.458484818239782,
+  "pore_density_per_mm2": 318.73914930555554,
+  "config": {
+    "um_per_px": 1.5,
+    "threshold": "otsu",
+    "bright_pores": false,
+    "denoise": "gaussian",
+    "denoise_sigma": 1.0,
+    "flat_field": true,
+    "min_pore_area_px": 30,
+    "fill_wall_holes_px": 30,
+    "split_touching": false,
+    "watershed_min_distance_px": 7,
+    "crop_bottom_px": 0,
+    "exclude_border_pores": true
+  }
+}

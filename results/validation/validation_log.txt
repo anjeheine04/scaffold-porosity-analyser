@@ -1,0 +1,16 @@
+Threshold method comparison:
+            mean_dice  mean_abs_void_error_pct_pts  mean_abs_size_error_pct
+threshold                                                                 
+otsu           0.967                        2.581                    5.444
+yen            0.951                        4.184                   20.324
+triangle       0.945                        4.817                   19.792
+li             0.934                        5.077                    3.224 
+
+Default settings (Otsu):
+               image  void_fraction_true  void_fraction_measured  n_pores_true  n_pores_measured  mean_d_true_um  mean_d_measured_um  dice
+freeze_dried_01.png               0.428                   0.400           277               260          28.431              29.126 0.966
+freeze_dried_02.png               0.407                   0.381           306               270          26.262              28.429 0.966
+printed_grid_01.png               0.422                   0.402            65                64         277.165             274.716 0.976
+printed_grid_02.png               0.418                   0.398            64                64         280.133             273.314 0.975
+salt_leached_01.png               0.381                   0.352           481               411          30.266              33.375 0.959
+salt_leached_02.png               0.418                   0.387           423               367          32.625              35.358 0.960

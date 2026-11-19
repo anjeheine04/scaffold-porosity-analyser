@@ -1,0 +1,5 @@
+threshold,mean_dice,mean_abs_void_error_pct_pts,mean_abs_size_error_pct
+otsu,0.967,2.581,5.444
+yen,0.951,4.184,20.324
+triangle,0.945,4.817,19.792
+li,0.934,5.077,3.224

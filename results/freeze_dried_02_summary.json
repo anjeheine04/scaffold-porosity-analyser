@@ -1,0 +1,31 @@
+{
+  "image": "freeze_dried_02.png",
+  "void_fraction": 0.3809424506293403,
+  "threshold_value": 0.498046875,
+  "n_pores": 324,
+  "n_pores_measured": 270,
+  "mean_equiv_diameter_um": 28.429466524287616,
+  "median_equiv_diameter_um": 27.88030790588202,
+  "std_equiv_diameter_um": 9.620750102484196,
+  "d10_um": 17.862586292378914,
+  "d90_um": 40.54787898045411,
+  "mean_pore_area_um2": 707.4814814814815,
+  "mean_circularity": 0.5505183673299796,
+  "mean_aspect_ratio": 3.211779245416641,
+  "mean_wall_thickness_um": 16.692983738231415,
+  "pore_density_per_mm2": 549.31640625,
+  "config": {
+    "um_per_px": 1.0,
+    "threshold": "otsu",
+    "bright_pores": false,
+    "denoise": "gaussian",
+    "denoise_sigma": 1.0,
+    "flat_field": true,
+    "min_pore_area_px": 30,
+    "fill_wall_holes_px": 30,
+    "split_touching": false,
+    "watershed_min_distance_px": 7,
+    "crop_bottom_px": 0,
+    "exclude_border_pores": true
+  }
+}

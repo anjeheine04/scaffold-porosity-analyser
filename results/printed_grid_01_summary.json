@@ -1,0 +1,31 @@
+{
+  "image": "printed_grid_01.png",
+  "void_fraction": 0.4024030897352431,
+  "threshold_value": 0.486328125,
+  "n_pores": 64,
+  "n_pores_measured": 64,
+  "mean_equiv_diameter_um": 274.7158681337461,
+  "median_equiv_diameter_um": 274.65777077124255,
+  "std_equiv_diameter_um": 9.00490708371959,
+  "d10_um": 263.9730734618196,
+  "d90_um": 284.6379783349156,
+  "mean_pore_area_um2": 59336.75,
+  "mean_circularity": 0.7329778189398026,
+  "mean_aspect_ratio": 1.065097986852615,
+  "mean_wall_thickness_um": 140.70530163735523,
+  "pore_density_per_mm2": 6.781684027777778,
+  "config": {
+    "um_per_px": 4.0,
+    "threshold": "otsu",
+    "bright_pores": false,
+    "denoise": "gaussian",
+    "denoise_sigma": 1.0,
+    "flat_field": true,
+    "min_pore_area_px": 30,
+    "fill_wall_holes_px": 30,
+    "split_touching": false,
+    "watershed_min_distance_px": 7,
+    "crop_bottom_px": 0,
+    "exclude_border_pores": true
+  }
+}
