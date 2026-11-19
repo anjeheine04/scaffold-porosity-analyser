@@ -1,6 +1,5 @@
 """
-Generate synthetic SEM-style micrographs of porous tissue scaffolds with exact
-ground truth, for validating the porosity analyser.
+Generate synthetic SEM-style micrographs of porous tissue scaffolds.
 
 Why synthetic?
     Validating an image-analysis pipeline needs images where the "right
