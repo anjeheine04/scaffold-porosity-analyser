@@ -14,10 +14,20 @@ forms. Interconnected pores of roughly 100–300 µm are often cited for bone in
 smaller pores for soft tissue. Pores are still often measured by hand in ImageJ, which is
 slow, subjective and hard to reproduce across a batch of samples.
 
-I built this tool to help analyse scaffold micrographs in my research work. It turns SEM,
-optical or micro-CT slice images into consistent, quantitative pore metrics, so scaffolds
-made by different methods (porogen leaching, freeze-drying, 3D bioprinting) can be compared
-objectively and quickly.
+I built this tool **retrospectively**, after an undergraduate project at Imperial College
+London where I characterised powders by SEM, EDX and XRD. There I measured particle sizes by
+hand in ImageJ, which was slow and hard to keep consistent. Looking back, I wanted an
+automated, reproducible alternative. I also expect to need one in my MSc research on
+bioactive glass microcarriers, where microsphere size and porosity have to be quantified
+from microscope images.
+
+The tool turns SEM, optical or micro-CT slice images into consistent, quantitative pore
+metrics, so scaffolds made by different methods (porogen leaching, freeze-drying,
+3D bioprinting) can be compared objectively and quickly.
+
+> **Note:** the code was written after that project, not during it. All results shown here
+> come from synthetic test images with known ground truth (see "Validation" below), not from
+> my own micrographs.
 
 ## What it measures
 
@@ -163,6 +173,9 @@ against ground truth · CLI tool design · pytest
   surface plane only.
 
 ## Next steps
+
+- Apply it to real micrographs, starting with my own SEM images from the powder
+  characterisation project, and compare against my original manual ImageJ measurements
 
 - 3D analysis of micro-CT stacks (volumetric porosity, pore interconnectivity, tortuosity)
 - Adaptive / machine-learning segmentation (e.g. random-forest pixel classifier or U-Net) for
